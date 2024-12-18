@@ -1,0 +1,78 @@
+/* Basic Reset and Styling */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Slider Section */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    background-color: #fff;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw; /* Ensures that there are enough slides */
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg {
+    z-index: 1;
+    width: 300px;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.sliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+@media screen and (max-width: 480px) {
+    .sliderImg {
+        width: 80%;
+    }
+
+    .sliderTitle {
+        font-size: 40px;
+    }
+
+    .sliderPrice {
+        font-size: 24px;
+    }
+}
